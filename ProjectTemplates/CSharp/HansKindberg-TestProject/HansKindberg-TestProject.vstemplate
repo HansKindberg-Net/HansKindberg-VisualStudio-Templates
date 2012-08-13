@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+	<TemplateData>
+		<Name>HansKindberg - Test Project</Name>
+		<Description></Description>
+		<Icon Package="{52CBD135-1F97-2580-011F-C7CD052E44DE}" ID="531"/>
+		<TemplateID>HansKindberg.CSharp.TestProject</TemplateID>
+		<ProjectType>CSharp</ProjectType>
+		<RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+		<SortOrder>1000</SortOrder>
+		<NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+		<CreateNewFolder>true</CreateNewFolder>
+		<DefaultName>TestProject</DefaultName>
+		<ProvideDefaultName>true</ProvideDefaultName>
+	</TemplateData>
+	<TemplateContent>
+		<Project File="HansKindberg-TestProject.csproj" ReplaceParameters="true">
+			<Folder Name="CodeAnalysis" TargetFolderName="CodeAnalysis">
+				<ProjectItem ReplaceParameters="true" TargetFileName="AssemblyDictionary.xml">AssemblyDictionary.xml</ProjectItem>
+				<ProjectItem ReplaceParameters="true" TargetFileName="AssemblySuppressions.cs">AssemblySuppressions.cs</ProjectItem>
+			</Folder>
+			<Folder Name="Properties" TargetFolderName="Properties">
+				<ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+			</Folder>
+		</Project>
+	</TemplateContent>
+	<WizardExtension>
+		<Assembly>Microsoft.VisualStudio.QualityTools.Wizard.TestProjectWizards, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+		<FullClassName>Microsoft.VisualStudio.TestTools.TestProjectWizards.TestProjectWizardExtension</FullClassName>
+	</WizardExtension>
+</VSTemplate>

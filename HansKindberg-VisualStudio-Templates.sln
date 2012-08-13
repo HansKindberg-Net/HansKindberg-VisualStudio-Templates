@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionTemplates", "SolutionTemplates", "{A6E0A52F-172D-4A6B-A3B5-17B175B2EB1D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProjectTemplates", "ProjectTemplates", "{13F6411B-6837-45B7-9F28-BBC3EF0EB6DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharp", "CSharp", "{B75D7DDE-4C34-43B6-89AA-9EC468BACB8C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharp", "CSharp", "{92C3F007-5108-4BE7-B91C-A01B18314ABA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HansKindberg-ClassLibrary", "HansKindberg-ClassLibrary", "{2A5F8200-8B5B-4430-9899-1B3C812A9F76}"
+	ProjectSection(SolutionItems) = preProject
+		ProjectTemplates\CSharp\HansKindberg-ClassLibrary\HansKindberg-ClassLibrary.csproj = ProjectTemplates\CSharp\HansKindberg-ClassLibrary\HansKindberg-ClassLibrary.csproj
+		ProjectTemplates\CSharp\HansKindberg-ClassLibrary\HansKindberg-ClassLibrary.vstemplate = ProjectTemplates\CSharp\HansKindberg-ClassLibrary\HansKindberg-ClassLibrary.vstemplate
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HansKindberg-TestProject", "HansKindberg-TestProject", "{7B2B122D-4372-4CD2-8DF6-7BC6B62E1765}"
+	ProjectSection(SolutionItems) = preProject
+		ProjectTemplates\CSharp\HansKindberg-TestProject\HansKindberg-TestProject.csproj = ProjectTemplates\CSharp\HansKindberg-TestProject\HansKindberg-TestProject.csproj
+		ProjectTemplates\CSharp\HansKindberg-TestProject\HansKindberg-TestProject.vstemplate = ProjectTemplates\CSharp\HansKindberg-TestProject\HansKindberg-TestProject.vstemplate
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CodeAnalysis", "CodeAnalysis", "{1A311FB3-34D3-4F59-A10E-1597028E0A87}"
+	ProjectSection(SolutionItems) = preProject
+		ProjectTemplates\CSharp\HansKindberg-ClassLibrary\CodeAnalysis\AssemblyDictionary.xml = ProjectTemplates\CSharp\HansKindberg-ClassLibrary\CodeAnalysis\AssemblyDictionary.xml
+		ProjectTemplates\CSharp\HansKindberg-ClassLibrary\CodeAnalysis\AssemblySuppressions.cs = ProjectTemplates\CSharp\HansKindberg-ClassLibrary\CodeAnalysis\AssemblySuppressions.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CodeAnalysis", "CodeAnalysis", "{DB823A37-2E0D-4722-BC97-9FBAB406931A}"
+	ProjectSection(SolutionItems) = preProject
+		ProjectTemplates\CSharp\HansKindberg-TestProject\CodeAnalysis\AssemblyDictionary.xml = ProjectTemplates\CSharp\HansKindberg-TestProject\CodeAnalysis\AssemblyDictionary.xml
+		ProjectTemplates\CSharp\HansKindberg-TestProject\CodeAnalysis\AssemblySuppressions.cs = ProjectTemplates\CSharp\HansKindberg-TestProject\CodeAnalysis\AssemblySuppressions.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Properties", "Properties", "{E99A9917-0943-46CE-A11E-E9820427C075}"
+	ProjectSection(SolutionItems) = preProject
+		ProjectTemplates\CSharp\HansKindberg-TestProject\Properties\AssemblyInfo.cs = ProjectTemplates\CSharp\HansKindberg-TestProject\Properties\AssemblyInfo.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Properties", "Properties", "{BD4E6A53-9B1D-4F23-AE31-A1683510AE8C}"
+	ProjectSection(SolutionItems) = preProject
+		ProjectTemplates\CSharp\HansKindberg-ClassLibrary\Properties\AssemblyInfo.cs = ProjectTemplates\CSharp\HansKindberg-ClassLibrary\Properties\AssemblyInfo.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{92C3F007-5108-4BE7-B91C-A01B18314ABA} = {A6E0A52F-172D-4A6B-A3B5-17B175B2EB1D}
+		{B75D7DDE-4C34-43B6-89AA-9EC468BACB8C} = {13F6411B-6837-45B7-9F28-BBC3EF0EB6DA}
+		{2A5F8200-8B5B-4430-9899-1B3C812A9F76} = {B75D7DDE-4C34-43B6-89AA-9EC468BACB8C}
+		{7B2B122D-4372-4CD2-8DF6-7BC6B62E1765} = {B75D7DDE-4C34-43B6-89AA-9EC468BACB8C}
+		{1A311FB3-34D3-4F59-A10E-1597028E0A87} = {2A5F8200-8B5B-4430-9899-1B3C812A9F76}
+		{BD4E6A53-9B1D-4F23-AE31-A1683510AE8C} = {2A5F8200-8B5B-4430-9899-1B3C812A9F76}
+		{DB823A37-2E0D-4722-BC97-9FBAB406931A} = {7B2B122D-4372-4CD2-8DF6-7BC6B62E1765}
+		{E99A9917-0943-46CE-A11E-E9820427C075} = {7B2B122D-4372-4CD2-8DF6-7BC6B62E1765}
+	EndGlobalSection
+EndGlobal
