@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
 	<TemplateData>
-		<Name>HansKindberg - Test Project</Name>
-		<Description></Description>
-		<Icon Package="{52CBD135-1F97-2580-011F-C7CD052E44DE}" ID="531"/>
-		<TemplateID>HansKindberg.CSharp.TestProject</TemplateID>
-		<ProjectType>CSharp</ProjectType>
-		<RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
-		<SortOrder>1000</SortOrder>
-		<NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+		<CreateInPlace>true</CreateInPlace>
 		<CreateNewFolder>true</CreateNewFolder>
 		<DefaultName>TestProject</DefaultName>
+		<Description></Description>
+		<Icon Package="{52CBD135-1F97-2580-011F-C7CD052E44DE}" ID="531"/>
+		<Name>HansKindberg - Test Project</Name>
+		<NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+		<ProjectType>CSharp</ProjectType>
 		<ProvideDefaultName>true</ProvideDefaultName>
+		<RequiredFrameworkVersion>4.0</RequiredFrameworkVersion>
+		<SortOrder>1000</SortOrder>
+		<TemplateID>HansKindberg.CSharp.TestProject</TemplateID>
 	</TemplateData>
 	<TemplateContent>
 		<Project File="HansKindberg-TestProject.csproj" ReplaceParameters="true">

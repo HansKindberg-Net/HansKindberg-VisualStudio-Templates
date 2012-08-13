@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
 	<TemplateData>
-		<Name>HansKindberg - Class Library</Name>
-		<Description></Description>
-		<Icon Package="{FAE04EC1-301F-11d3-BF4B-00C04F79EFBC}" ID="4547" />
-		<TemplateID>HansKindberg.CSharp.ClassLibrary</TemplateID>
-		<ProjectType>CSharp</ProjectType>
-		<RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
-		<SortOrder>1000</SortOrder>
-		<NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+		<CreateInPlace>true</CreateInPlace>
 		<CreateNewFolder>true</CreateNewFolder>
 		<DefaultName>ClassLibrary</DefaultName>
+		<Description></Description>
+		<Icon Package="{FAE04EC1-301F-11d3-BF4B-00C04F79EFBC}" ID="4547" />
+		<Name>HansKindberg - Class Library</Name>
+		<NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+		<ProjectType>CSharp</ProjectType>
 		<ProvideDefaultName>true</ProvideDefaultName>
+		<RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+		<SortOrder>1000</SortOrder>
+		<TemplateID>HansKindberg.CSharp.ClassLibrary</TemplateID>
 	</TemplateData>
 	<TemplateContent>
 		<Project File="HansKindberg-ClassLibrary.csproj" ReplaceParameters="true">

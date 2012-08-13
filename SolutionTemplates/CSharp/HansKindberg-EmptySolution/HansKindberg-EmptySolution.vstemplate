@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
 	<TemplateData>
-		<Name>HansKindberg - Empty Solution</Name>
-		<Description></Description>
-		<Icon />
-		<TemplateID>HansKindberg.CSharp.EmptySolution</TemplateID>
-		<ProjectType>CSharp</ProjectType>
-		<SortOrder>1000</SortOrder>
+		<CreateInPlace>true</CreateInPlace>
 		<CreateNewFolder>false</CreateNewFolder>
 		<DefaultName>EmptySolution</DefaultName>
+		<Description></Description>
+		<Icon />
+		<Name>HansKindberg - Empty Solution</Name>
+		<ProjectType>CSharp</ProjectType>
+		<SortOrder>1000</SortOrder>
+		<TemplateID>HansKindberg.CSharp.EmptySolution</TemplateID>
 	</TemplateData>
 	<TemplateContent>
 		<ProjectCollection>
