@@ -7,4 +7,5 @@ release/
 testresults/
 *.suo
 *.user
+*.zip
 NuGet.config
