@@ -4,17 +4,17 @@
 		<MSBuildCommunityTasksLibrary>$(SolutionDir)packages\MSBuildTasks.1.4.0.65\tools\MSBuild.Community.Tasks.dll</MSBuildCommunityTasksLibrary>
 	</PropertyGroup>
 	<ItemGroup>
-		<Files Include="ItemTemplates\CSharp\HansKindberg.ConfigTransformTemplate\**\*.*" >
-			<Template>ItemTemplates\CSharp\HansKindberg.ConfigTransformTemplate</Template>
+		<Files Include="ItemTemplates\CSharp\HansKindberg.CSharp.ConfigTransformTemplate\**\*.*" >
+			<Template>ItemTemplates\CSharp\HansKindberg.CSharp.ConfigTransformTemplate</Template>
 		</Files>
-		<Files Include="ItemTemplates\CSharp\HansKindberg.ConfigTransformTemplateWithCommonTransform\**\*.*" >
-			<Template>ItemTemplates\CSharp\HansKindberg.ConfigTransformTemplateWithCommonTransform</Template>
+		<Files Include="ItemTemplates\CSharp\HansKindberg.CSharp.ConfigTransformTemplateWithCommonTransform\**\*.*" >
+			<Template>ItemTemplates\CSharp\HansKindberg.CSharp.ConfigTransformTemplateWithCommonTransform</Template>
 		</Files>
-		<Files Include="ItemTemplates\CSharp\HansKindberg.XmlTransformTemplate\**\*.*" >
-			<Template>ItemTemplates\CSharp\HansKindberg.XmlTransformTemplate</Template>
+		<Files Include="ItemTemplates\CSharp\HansKindberg.CSharp.XmlTransformTemplate\**\*.*" >
+			<Template>ItemTemplates\CSharp\HansKindberg.CSharp.XmlTransformTemplate</Template>
 		</Files>
-		<Files Include="ItemTemplates\CSharp\HansKindberg.XmlTransformTemplateWithCommonTransform\**\*.*" >
-			<Template>ItemTemplates\CSharp\HansKindberg.XmlTransformTemplateWithCommonTransform</Template>
+		<Files Include="ItemTemplates\CSharp\HansKindberg.CSharp.XmlTransformTemplateWithCommonTransform\**\*.*" >
+			<Template>ItemTemplates\CSharp\HansKindberg.CSharp.XmlTransformTemplateWithCommonTransform</Template>
 		</Files>
 	</ItemGroup>
 </Project>

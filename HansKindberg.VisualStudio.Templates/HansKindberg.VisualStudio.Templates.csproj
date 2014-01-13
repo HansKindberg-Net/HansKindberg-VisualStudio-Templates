@@ -1,81 +1,74 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-  <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F535010F-A5E7-4CAB-A4FC-B30F1E2AF715}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HansKindberg.VisualStudio.Templates</RootNamespace>
-    <AssemblyName>HansKindberg.VisualStudio.Templates</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Package|AnyCPU' ">
-    <DebugType>none</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>..\Templates\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <ItemGroup>
-    <Content Include="ItemTemplates\CSharp\HansKindberg.ConfigTransformTemplateWithCommonTransform\HansKindberg.ConfigTransformTemplateWithCommonTransform.vstemplate" />
-    <None Include="HansKindberg.VisualStudio.Templates.props">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="ItemTemplates\CSharp\HansKindberg.ConfigTransformTemplateWithCommonTransform\Name.Common.config" />
-    <Content Include="ItemTemplates\CSharp\HansKindberg.ConfigTransformTemplate\HansKindberg.ConfigTransformTemplate.vstemplate">
-      <SubType>Designer</SubType>
-    </Content>
-    <None Include="ItemTemplates\CSharp\HansKindberg.ConfigTransformTemplateWithCommonTransform\Name.config" />
-    <None Include="ItemTemplates\CSharp\HansKindberg.ConfigTransformTemplateWithCommonTransform\Name.Development.config" />
-    <None Include="ItemTemplates\CSharp\HansKindberg.ConfigTransformTemplateWithCommonTransform\Name.Production.config" />
-    <None Include="ItemTemplates\CSharp\HansKindberg.ConfigTransformTemplateWithCommonTransform\Name.Template.config" />
-    <None Include="ItemTemplates\CSharp\HansKindberg.ConfigTransformTemplateWithCommonTransform\Name.Test.config" />
-    <None Include="ItemTemplates\CSharp\HansKindberg.ConfigTransformTemplate\Name.Development.config" />
-    <None Include="ItemTemplates\CSharp\HansKindberg.ConfigTransformTemplate\Name.Production.config" />
-    <None Include="ItemTemplates\CSharp\HansKindberg.ConfigTransformTemplate\Name.Template.config" />
-    <None Include="ItemTemplates\CSharp\HansKindberg.ConfigTransformTemplate\Name.Test.config" />
-    <None Include="ItemTemplates\CSharp\HansKindberg.ConfigTransformTemplate\Name.config" />
-    <Content Include="ItemTemplates\CSharp\HansKindberg.XmlTransformTemplate\HansKindberg.XmlTransformTemplate.vstemplate" />
-    <Content Include="ItemTemplates\CSharp\HansKindberg.XmlTransformTemplate\XmlFile.Development.xml" />
-    <Content Include="ItemTemplates\CSharp\HansKindberg.XmlTransformTemplate\XmlFile.Production.xml" />
-    <Content Include="ItemTemplates\CSharp\HansKindberg.XmlTransformTemplate\XmlFile.Template.xml" />
-    <Content Include="ItemTemplates\CSharp\HansKindberg.XmlTransformTemplate\XmlFile.Test.xml" />
-    <Content Include="ItemTemplates\CSharp\HansKindberg.XmlTransformTemplate\XmlFile.xml" />
-    <Content Include="ItemTemplates\CSharp\HansKindberg.XmlTransformTemplateWithCommonTransform\HansKindberg.XmlTransformTemplateWithCommonTransform.vstemplate" />
-    <Content Include="ItemTemplates\CSharp\HansKindberg.XmlTransformTemplateWithCommonTransform\XmlFile.Common.xml" />
-    <Content Include="ItemTemplates\CSharp\HansKindberg.XmlTransformTemplateWithCommonTransform\XmlFile.Development.xml" />
-    <Content Include="ItemTemplates\CSharp\HansKindberg.XmlTransformTemplateWithCommonTransform\XmlFile.Production.xml" />
-    <Content Include="ItemTemplates\CSharp\HansKindberg.XmlTransformTemplateWithCommonTransform\XmlFile.Template.xml" />
-    <Content Include="ItemTemplates\CSharp\HansKindberg.XmlTransformTemplateWithCommonTransform\XmlFile.Test.xml" />
-    <Content Include="ItemTemplates\CSharp\HansKindberg.XmlTransformTemplateWithCommonTransform\XmlFile.xml" />
-    <Content Include="ProjectTemplates\CSharp\HansKindberg-ClassLibrary\CodeAnalysis\AssemblyDictionary.xml" />
-    <Content Include="ProjectTemplates\CSharp\HansKindberg-ClassLibrary\CodeAnalysis\AssemblySuppressions.cs" />
-    <Content Include="ProjectTemplates\CSharp\HansKindberg-ClassLibrary\HansKindberg-ClassLibrary.csproj" />
-    <Content Include="ProjectTemplates\CSharp\HansKindberg-ClassLibrary\HansKindberg-ClassLibrary.vstemplate" />
-    <Content Include="ProjectTemplates\CSharp\HansKindberg-ClassLibrary\Properties\AssemblyInfo.cs" />
-    <Content Include="ProjectTemplates\CSharp\HansKindberg-TestProject\CodeAnalysis\AssemblyDictionary.xml" />
-    <Content Include="ProjectTemplates\CSharp\HansKindberg-TestProject\CodeAnalysis\AssemblySuppressions.cs" />
-    <Content Include="ProjectTemplates\CSharp\HansKindberg-TestProject\HansKindberg-TestProject.csproj" />
-    <Content Include="ProjectTemplates\CSharp\HansKindberg-TestProject\HansKindberg-TestProject.vstemplate" />
-    <Content Include="ProjectTemplates\CSharp\HansKindberg-TestProject\Properties\AssemblyInfo.cs" />
-    <Content Include="SolutionTemplates\CSharp\HansKindberg-EmptySolution\CodeAnalysis\Solution.ruleset" />
-    <Content Include="SolutionTemplates\CSharp\HansKindberg-EmptySolution\CodeAnalysis\Solution.Tests.ruleset" />
-    <Content Include="SolutionTemplates\CSharp\HansKindberg-EmptySolution\CodeAnalysis\SolutionDictionary.xml" />
-    <Content Include="SolutionTemplates\CSharp\HansKindberg-EmptySolution\CodeAnalysis\SolutionSuppressions.cs" />
-    <Content Include="SolutionTemplates\CSharp\HansKindberg-EmptySolution\HansKindberg-EmptySolution.vstemplate" />
-    <Content Include="SolutionTemplates\CSharp\HansKindberg-EmptySolution\Properties\SolutionInfo.cs" />
-    <None Include="HansKindberg.VisualStudio.Templates.targets">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup />
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
-  <Import Project="HansKindberg.VisualStudio.Templates.targets" />
+	<Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+	<PropertyGroup>
+		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+		<ProjectGuid>{F535010F-A5E7-4CAB-A4FC-B30F1E2AF715}</ProjectGuid>
+		<OutputType>Library</OutputType>
+		<AppDesignerFolder>Properties</AppDesignerFolder>
+		<RootNamespace>HansKindberg.VisualStudio.Templates</RootNamespace>
+		<AssemblyName>HansKindberg.VisualStudio.Templates</AssemblyName>
+		<TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+		<FileAlignment>512</FileAlignment>
+		<SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Package|AnyCPU' ">
+		<DebugType>none</DebugType>
+		<Optimize>true</Optimize>
+		<OutputPath>..\Templates\</OutputPath>
+		<DefineConstants>TRACE</DefineConstants>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>4</WarningLevel>
+	</PropertyGroup>
+	<ItemGroup>
+		<Content Include="ItemTemplates\CSharp\HansKindberg.CSharp.ConfigTransformTemplateWithCommonTransform\HansKindberg.CSharp.ConfigTransformTemplateWithCommonTransform.vstemplate" />
+		<Content Include="ItemTemplates\CSharp\HansKindberg.CSharp.ConfigTransformTemplateWithCommonTransform\NewConfigFile.Common.config" />
+		<Content Include="ItemTemplates\CSharp\HansKindberg.CSharp.ConfigTransformTemplateWithCommonTransform\NewConfigFile.config" />
+		<Content Include="ItemTemplates\CSharp\HansKindberg.CSharp.ConfigTransformTemplateWithCommonTransform\NewConfigFile.Development.config" />
+		<Content Include="ItemTemplates\CSharp\HansKindberg.CSharp.ConfigTransformTemplateWithCommonTransform\NewConfigFile.Production.config" />
+		<Content Include="ItemTemplates\CSharp\HansKindberg.CSharp.ConfigTransformTemplateWithCommonTransform\NewConfigFile.Template.config" />
+		<Content Include="ItemTemplates\CSharp\HansKindberg.CSharp.ConfigTransformTemplateWithCommonTransform\NewConfigFile.Test.config" />
+		<Content Include="ItemTemplates\CSharp\HansKindberg.CSharp.ConfigTransformTemplate\HansKindberg.CSharp.ConfigTransformTemplate.vstemplate" />
+		<Content Include="ItemTemplates\CSharp\HansKindberg.CSharp.ConfigTransformTemplate\NewConfigFile.config" />
+		<Content Include="ItemTemplates\CSharp\HansKindberg.CSharp.ConfigTransformTemplate\NewConfigFile.Development.config" />
+		<Content Include="ItemTemplates\CSharp\HansKindberg.CSharp.ConfigTransformTemplate\NewConfigFile.Production.config" />
+		<Content Include="ItemTemplates\CSharp\HansKindberg.CSharp.ConfigTransformTemplate\NewConfigFile.Template.config" />
+		<Content Include="ItemTemplates\CSharp\HansKindberg.CSharp.ConfigTransformTemplate\NewConfigFile.Test.config" />
+		<Content Include="ItemTemplates\CSharp\HansKindberg.CSharp.XmlTransformTemplateWithCommonTransform\HansKindberg.CSharp.XmlTransformTemplateWithCommonTransform.vstemplate" />
+		<Content Include="ItemTemplates\CSharp\HansKindberg.CSharp.XmlTransformTemplateWithCommonTransform\NewXmlFile.Common.xml" />
+		<Content Include="ItemTemplates\CSharp\HansKindberg.CSharp.XmlTransformTemplateWithCommonTransform\NewXmlFile.Development.xml" />
+		<Content Include="ItemTemplates\CSharp\HansKindberg.CSharp.XmlTransformTemplateWithCommonTransform\NewXmlFile.Production.xml" />
+		<Content Include="ItemTemplates\CSharp\HansKindberg.CSharp.XmlTransformTemplateWithCommonTransform\NewXmlFile.Template.xml" />
+		<Content Include="ItemTemplates\CSharp\HansKindberg.CSharp.XmlTransformTemplateWithCommonTransform\NewXmlFile.Test.xml" />
+		<Content Include="ItemTemplates\CSharp\HansKindberg.CSharp.XmlTransformTemplateWithCommonTransform\NewXmlFile.xml" />
+		<Content Include="ItemTemplates\CSharp\HansKindberg.CSharp.XmlTransformTemplate\HansKindberg.CSharp.XmlTransformTemplate.vstemplate" />
+		<Content Include="ItemTemplates\CSharp\HansKindberg.CSharp.XmlTransformTemplate\NewXmlFile.Development.xml" />
+		<Content Include="ItemTemplates\CSharp\HansKindberg.CSharp.XmlTransformTemplate\NewXmlFile.Production.xml" />
+		<Content Include="ItemTemplates\CSharp\HansKindberg.CSharp.XmlTransformTemplate\NewXmlFile.Template.xml" />
+		<Content Include="ItemTemplates\CSharp\HansKindberg.CSharp.XmlTransformTemplate\NewXmlFile.Test.xml" />
+		<Content Include="ItemTemplates\CSharp\HansKindberg.CSharp.XmlTransformTemplate\NewXmlFile.xml" />
+		<Content Include="ProjectTemplates\CSharp\HansKindberg-ClassLibrary\CodeAnalysis\AssemblyDictionary.xml" />
+		<Content Include="ProjectTemplates\CSharp\HansKindberg-ClassLibrary\CodeAnalysis\AssemblySuppressions.cs" />
+		<Content Include="ProjectTemplates\CSharp\HansKindberg-ClassLibrary\HansKindberg-ClassLibrary.csproj" />
+		<Content Include="ProjectTemplates\CSharp\HansKindberg-ClassLibrary\HansKindberg-ClassLibrary.vstemplate" />
+		<Content Include="ProjectTemplates\CSharp\HansKindberg-ClassLibrary\Properties\AssemblyInfo.cs" />
+		<Content Include="ProjectTemplates\CSharp\HansKindberg-TestProject\CodeAnalysis\AssemblyDictionary.xml" />
+		<Content Include="ProjectTemplates\CSharp\HansKindberg-TestProject\CodeAnalysis\AssemblySuppressions.cs" />
+		<Content Include="ProjectTemplates\CSharp\HansKindberg-TestProject\HansKindberg-TestProject.csproj" />
+		<Content Include="ProjectTemplates\CSharp\HansKindberg-TestProject\HansKindberg-TestProject.vstemplate" />
+		<Content Include="ProjectTemplates\CSharp\HansKindberg-TestProject\Properties\AssemblyInfo.cs" />
+		<Content Include="SolutionTemplates\CSharp\HansKindberg-EmptySolution\CodeAnalysis\Solution.ruleset" />
+		<Content Include="SolutionTemplates\CSharp\HansKindberg-EmptySolution\CodeAnalysis\Solution.Tests.ruleset" />
+		<Content Include="SolutionTemplates\CSharp\HansKindberg-EmptySolution\CodeAnalysis\SolutionDictionary.xml" />
+		<Content Include="SolutionTemplates\CSharp\HansKindberg-EmptySolution\CodeAnalysis\SolutionSuppressions.cs" />
+		<Content Include="SolutionTemplates\CSharp\HansKindberg-EmptySolution\HansKindberg-EmptySolution.vstemplate" />
+		<Content Include="SolutionTemplates\CSharp\HansKindberg-EmptySolution\Properties\SolutionInfo.cs" />
+		<None Include="HansKindberg.VisualStudio.Templates.props" />
+		<None Include="HansKindberg.VisualStudio.Templates.targets" />
+		<None Include="packages.config" />
+	</ItemGroup>
+	<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+	<Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+	<Import Project="HansKindberg.VisualStudio.Templates.targets" />
 </Project>

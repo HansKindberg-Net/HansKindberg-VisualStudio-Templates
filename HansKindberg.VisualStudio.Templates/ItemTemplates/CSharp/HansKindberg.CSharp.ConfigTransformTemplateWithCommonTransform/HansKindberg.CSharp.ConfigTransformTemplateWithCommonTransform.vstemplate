@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Type="Item" Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+	<TemplateData>
+		<DefaultName>NewConfigFile.config</DefaultName>
+		<Description>Config transform template with common transform</Description>
+		<Icon ID="4600" Package="{FAE04EC1-301F-11d3-BF4B-00C04F79EFBC}" />
+		<Name>Config transform template with common transform</Name>
+		<NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+		<ProjectType>CSharp</ProjectType>
+		<TemplateID>HansKindberg.CSharp.ConfigTransformTemplateWithCommonTransform</TemplateID>
+	</TemplateData>
+	<TemplateContent>
+		<ProjectItem ItemType="Content" ReplaceParameters="true" TargetFileName="$fileinputname$.xml">NewConfigFile.xml</ProjectItem>
+		<ProjectItem ItemType="None" ReplaceParameters="true" TargetFileName="$fileinputname$.xml\$fileinputname$.Template.xml">NewConfigFile.Template.xml</ProjectItem>
+		<ProjectItem ItemType="None" ReplaceParameters="true" TargetFileName="$fileinputname$.xml\$fileinputname$.Template.xml\$fileinputname$.Common.xml">NewConfigFile.Common.xml</ProjectItem>
+		<ProjectItem ItemType="None" ReplaceParameters="true" TargetFileName="$fileinputname$.xml\$fileinputname$.Template.xml\$fileinputname$.Common.xml\$fileinputname$.Development.xml">NewConfigFile.Development.xml</ProjectItem>
+		<ProjectItem ItemType="None" ReplaceParameters="true" TargetFileName="$fileinputname$.xml\$fileinputname$.Template.xml\$fileinputname$.Common.xml\$fileinputname$.Production.xml">NewConfigFile.Production.xml</ProjectItem>
+		<ProjectItem ItemType="None" ReplaceParameters="true" TargetFileName="$fileinputname$.xml\$fileinputname$.Template.xml\$fileinputname$.Common.xml\$fileinputname$.Test.xml">NewConfigFile.Test.xml</ProjectItem>
+	</TemplateContent>
+</VSTemplate>

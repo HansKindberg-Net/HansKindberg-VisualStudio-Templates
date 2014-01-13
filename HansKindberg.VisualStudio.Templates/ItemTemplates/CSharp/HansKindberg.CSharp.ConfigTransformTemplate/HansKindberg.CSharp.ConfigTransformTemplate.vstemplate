@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Type="Item" Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+	<TemplateData>
+		<DefaultName>NewConfigFile.config</DefaultName>
+		<Description>Config transform template</Description>
+		<Icon ID="4600" Package="{FAE04EC1-301F-11d3-BF4B-00C04F79EFBC}" />
+		<Name>Config transform template</Name>
+		<NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+		<ProjectType>CSharp</ProjectType>
+		<TemplateID>HansKindberg.CSharp.ConfigTransformTemplate</TemplateID>
+	</TemplateData>
+	<TemplateContent>
+		<ProjectItem ItemType="Content" ReplaceParameters="true" TargetFileName="$fileinputname$.config">NewConfigFile.config</ProjectItem>
+		<ProjectItem ItemType="None" ReplaceParameters="true" TargetFileName="$fileinputname$.config\$fileinputname$.Template.config">NewConfigFile.Template.config</ProjectItem>
+		<ProjectItem ItemType="None" ReplaceParameters="true" TargetFileName="$fileinputname$.config\$fileinputname$.Template.config\$fileinputname$.Development.config">NewConfigFile.Development.config</ProjectItem>
+		<ProjectItem ItemType="None" ReplaceParameters="true" TargetFileName="$fileinputname$.config\$fileinputname$.Template.config\$fileinputname$.Production.config">NewConfigFile.Production.config</ProjectItem>
+		<ProjectItem ItemType="None" ReplaceParameters="true" TargetFileName="$fileinputname$.config\$fileinputname$.Template.config\$fileinputname$.Test.config">NewConfigFile.Test.config</ProjectItem>
+	</TemplateContent>
+</VSTemplate>
