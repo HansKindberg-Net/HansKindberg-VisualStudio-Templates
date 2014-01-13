@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F535010F-A5E7-4CAB-A4FC-B30F1E2AF715}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HansKindberg.VisualStudio.Templates</RootNamespace>
+    <AssemblyName>HansKindberg.VisualStudio.Templates</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Package|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Templates\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="ProjectTemplates\CSharp\HansKindberg-ClassLibrary\CodeAnalysis\AssemblyDictionary.xml" />
+    <Content Include="ProjectTemplates\CSharp\HansKindberg-ClassLibrary\HansKindberg-ClassLibrary.csproj" />
+    <Content Include="ProjectTemplates\CSharp\HansKindberg-ClassLibrary\HansKindberg-ClassLibrary.vstemplate" />
+    <Content Include="ProjectTemplates\CSharp\HansKindberg-TestProject\CodeAnalysis\AssemblyDictionary.xml" />
+    <Content Include="ProjectTemplates\CSharp\HansKindberg-TestProject\HansKindberg-TestProject.csproj" />
+    <Content Include="ProjectTemplates\CSharp\HansKindberg-TestProject\HansKindberg-TestProject.vstemplate" />
+    <Content Include="SolutionTemplates\CSharp\HansKindberg-EmptySolution\CodeAnalysis\SolutionDictionary.xml" />
+    <Content Include="SolutionTemplates\CSharp\HansKindberg-EmptySolution\HansKindberg-EmptySolution.vstemplate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ProjectTemplates\CSharp\HansKindberg-ClassLibrary\CodeAnalysis\AssemblySuppressions.cs" />
+    <Content Include="ProjectTemplates\CSharp\HansKindberg-ClassLibrary\Properties\AssemblyInfo.cs" />
+    <Content Include="ProjectTemplates\CSharp\HansKindberg-TestProject\CodeAnalysis\AssemblySuppressions.cs" />
+    <Content Include="ProjectTemplates\CSharp\HansKindberg-TestProject\Properties\AssemblyInfo.cs" />
+    <Content Include="SolutionTemplates\CSharp\HansKindberg-EmptySolution\CodeAnalysis\SolutionSuppressions.cs" />
+    <Content Include="SolutionTemplates\CSharp\HansKindberg-EmptySolution\Properties\SolutionInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SolutionTemplates\CSharp\HansKindberg-EmptySolution\CodeAnalysis\Solution.ruleset" />
+    <None Include="SolutionTemplates\CSharp\HansKindberg-EmptySolution\CodeAnalysis\Solution.Tests.ruleset" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ItemTemplates\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

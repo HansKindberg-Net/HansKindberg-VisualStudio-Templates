@@ -2,10 +2,12 @@ _ReSharper*/
 bin/
 debug/
 obj/
-packages/
+packages/*
 release/
+Templates/
 testresults/
 *.suo
 *.user
-*.zip
-NuGet.config
+.nuget/NuGet.exe
+
+!packages/repositories.config
