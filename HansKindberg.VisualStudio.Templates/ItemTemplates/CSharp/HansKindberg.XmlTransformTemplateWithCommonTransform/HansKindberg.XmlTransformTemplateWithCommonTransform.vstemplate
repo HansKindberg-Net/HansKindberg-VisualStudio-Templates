@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Type="Item" Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+	<TemplateData>
+		<DefaultName>XmlFile.xml</DefaultName>
+		<Description>XML transform template with common transform</Description>
+		<Icon ID="4524" Package="{FAE04EC1-301F-11d3-BF4B-00C04F79EFBC}" />
+		<Name>XML transform template with common transform</Name>
+		<NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+		<ProjectType>CSharp</ProjectType>
+		<TemplateID>HansKindberg.XmlTransformTemplateWithCommonTransform</TemplateID>
+	</TemplateData>
+	<TemplateContent>
+		<ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$.xml">XmlFile.xml</ProjectItem>
+		<ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$.xml\$fileinputname$.Template.xml">XmlFile.Template.xml</ProjectItem>
+		<ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$.xml\$fileinputname$.Template.xml\$fileinputname$.Common.xml">XmlFile.Common.xml</ProjectItem>
+		<ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$.xml\$fileinputname$.Template.xml\$fileinputname$.Common.xml\$fileinputname$.Development.xml">XmlFile.Development.xml</ProjectItem>
+		<ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$.xml\$fileinputname$.Template.xml\$fileinputname$.Common.xml\$fileinputname$.Production.xml">XmlFile.Production.xml</ProjectItem>
+		<ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$.xml\$fileinputname$.Template.xml\$fileinputname$.Common.xml\$fileinputname$.Test.xml">XmlFile.Test.xml</ProjectItem>
+	</TemplateContent>
+</VSTemplate>
