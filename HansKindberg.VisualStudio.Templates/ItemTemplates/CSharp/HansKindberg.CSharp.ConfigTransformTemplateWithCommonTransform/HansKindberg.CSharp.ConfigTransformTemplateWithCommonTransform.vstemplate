@@ -10,11 +10,11 @@
 		<TemplateID>HansKindberg.CSharp.ConfigTransformTemplateWithCommonTransform</TemplateID>
 	</TemplateData>
 	<TemplateContent>
-		<ProjectItem ItemType="Content" ReplaceParameters="true" TargetFileName="$fileinputname$.xml">NewConfigFile.xml</ProjectItem>
-		<ProjectItem ItemType="None" ReplaceParameters="true" TargetFileName="$fileinputname$.xml\$fileinputname$.Template.xml">NewConfigFile.Template.xml</ProjectItem>
-		<ProjectItem ItemType="None" ReplaceParameters="true" TargetFileName="$fileinputname$.xml\$fileinputname$.Template.xml\$fileinputname$.Common.xml">NewConfigFile.Common.xml</ProjectItem>
-		<ProjectItem ItemType="None" ReplaceParameters="true" TargetFileName="$fileinputname$.xml\$fileinputname$.Template.xml\$fileinputname$.Common.xml\$fileinputname$.Development.xml">NewConfigFile.Development.xml</ProjectItem>
-		<ProjectItem ItemType="None" ReplaceParameters="true" TargetFileName="$fileinputname$.xml\$fileinputname$.Template.xml\$fileinputname$.Common.xml\$fileinputname$.Production.xml">NewConfigFile.Production.xml</ProjectItem>
-		<ProjectItem ItemType="None" ReplaceParameters="true" TargetFileName="$fileinputname$.xml\$fileinputname$.Template.xml\$fileinputname$.Common.xml\$fileinputname$.Test.xml">NewConfigFile.Test.xml</ProjectItem>
+		<ProjectItem ItemType="Content" ReplaceParameters="true" TargetFileName="$fileinputname$.config">NewConfigFile.config</ProjectItem>
+		<ProjectItem ItemType="None" ReplaceParameters="true" TargetFileName="$fileinputname$.config\$fileinputname$.Template.config">NewConfigFile.Template.config</ProjectItem>
+		<ProjectItem ItemType="None" ReplaceParameters="true" TargetFileName="$fileinputname$.config\$fileinputname$.Template.config\$fileinputname$.Common.config">NewConfigFile.Common.config</ProjectItem>
+		<ProjectItem ItemType="None" ReplaceParameters="true" TargetFileName="$fileinputname$.config\$fileinputname$.Template.config\$fileinputname$.Common.config\$fileinputname$.Development.config">NewConfigFile.Development.config</ProjectItem>
+		<ProjectItem ItemType="None" ReplaceParameters="true" TargetFileName="$fileinputname$.config\$fileinputname$.Template.config\$fileinputname$.Common.config\$fileinputname$.Production.config">NewConfigFile.Production.config</ProjectItem>
+		<ProjectItem ItemType="None" ReplaceParameters="true" TargetFileName="$fileinputname$.config\$fileinputname$.Template.config\$fileinputname$.Common.config\$fileinputname$.Test.config">NewConfigFile.Test.config</ProjectItem>
 	</TemplateContent>
 </VSTemplate>
